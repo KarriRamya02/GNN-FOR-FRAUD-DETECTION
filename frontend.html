@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNN Fraud Detection System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            min-height: 600px;
+        }
+
+        .sidebar {
+            background: #f8f9fa;
+            padding: 30px;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .upload-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .upload-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .file-input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-input-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .file-input-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .file-name {
+            margin-top: 10px;
+            padding: 8px;
+            background: #e8f4fd;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+
+        .process-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .process-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .process-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .stats-section {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .stat-fraud {
+            background: #fee;
+            color: #e74c3c;
+        }
+
+        .stat-safe {
+            background: #efe;
+            color: #27ae60;
+        }
+
+        .stat-total {
+            background: #f0f0f0;
+            color: #2c3e50;
+        }
+
+        .graph-container {
+            padding: 30px;
+            background: white;
+        }
+
+        .graph-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .graph-header h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        .legend-fraud {
+            background: #e74c3c;
+        }
+
+        .legend-safe {
+            background: #27ae60;
+        }
+
+        #graph-svg {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ecf0f1;
+            border-radius: 15px;
+            background: #fafafa;
+        }
+
+        .node {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .node:hover {
+            stroke-width: 4;
+            stroke: #2c3e50;
+        }
+
+        .edge {
+            stroke: #bdc3c7;
+            stroke-width: 2;
+            opacity: 0.6;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #fee;
+            color: #e74c3c;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .success {
+            background: #efe;
+            color: #27ae60;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #27ae60;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sample-data-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .sample-data-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .sidebar, .graph-container {
+                padding: 20px;
+            }
+            
+            #graph-svg {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 GNN Fraud Detection System</h1>
+            <p>Advanced Graph Neural Network for Financial Fraud Detection</p>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="upload-section">
+                    <h3>📁 Upload Dataset</h3>
+                    <button class="sample-data-btn" onclick="loadSampleData()">
+                        📊 Load Sample Data
+                    </button>
+                    <div class="file-input-wrapper">
+                        <input type="file" class="file-input" id="fileInput" accept=".csv,.xlsx,.xls">
+                        <label for="fileInput" class="file-input-button">
+                            Choose CSV/Excel File
+                        </label>
+                    </div>
+                    <div class="file-name" id="fileName" style="display: none;"></div>
+                    <button class="process-btn" id="processBtn" onclick="processFile()" disabled>
+                        🚀 Analyze for Fraud
+                    </button>
+                </div>
+
+                <div class="stats-section">
+                    <h3>📊 Analysis Results</h3>
+                    <div id="stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Total Nodes:</span>
+                            <span class="stat-value stat-total" id="totalNodes">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Fraud Cases:</span>
+                            <span class="stat-value stat-fraud" id="fraudNodes">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Safe Cases:</span>
+                            <span class="stat-value stat-safe" id="safeNodes">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Connections:</span>
+                            <span class="stat-value stat-total" id="totalEdges">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graph-container">
+                <div class="graph-header">
+                    <h2>🌐 Fraud Detection Graph</h2>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color legend-fraud"></div>
+                            <span>Fraud</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color legend-safe"></div>
+                            <span>Safe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Processing your data with Graph Neural Network...</p>
+                    <small>This may take a few moments</small>
+                </div>
+
+                <div id="messageArea"></div>
+
+                <svg id="graph-svg">
+                    <defs>
+                        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+                        </filter>
+                    </defs>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#7f8c8d" font-size="18" font-family="Arial">
+                        Upload a dataset to visualize fraud detection results
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        const API_BASE = 'http://localhost:5000';
+        let currentData = null;
+
+        // File input handling
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const fileName = document.getElementById('fileName');
+            const processBtn = document.getElementById('processBtn');
+            
+            if (file) {
+                fileName.textContent = `Selected: ${file.name}`;
+                fileName.style.display = 'block';
+                processBtn.disabled = false;
+                clearMessages();
+            } else {
+                fileName.style.display = 'none';
+                processBtn.disabled = true;
+            }
+        });
+
+        function showMessage(message, type = 'error') {
+            const messageArea = document.getElementById('messageArea');
+            messageArea.innerHTML = `<div class="${type}">${message}</div>`;
+        }
+
+        function clearMessages() {
+            document.getElementById('messageArea').innerHTML = '';
+        }
+
+        function showLoading(show = true) {
+            const loading = document.getElementById('loading');
+            loading.classList.toggle('show', show);
+        }
+
+        function updateStats(stats) {
+            document.getElementById('totalNodes').textContent = stats.total_nodes || 0;
+            document.getElementById('fraudNodes').textContent = stats.fraud_nodes || 0;
+            document.getElementById('safeNodes').textContent = stats.safe_nodes || 0;
+            document.getElementById('totalEdges').textContent = stats.total_edges || 0;
+        }
+
+        async function loadSampleData() {
+            try {
+                showLoading(true);
+                clearMessages();
+
+                const response = await fetch(`${API_BASE}/sample-data`);
+                const data = await response.json();
+
+                if (data.success) {
+                    showMessage(`Sample data loaded successfully! Shape: ${data.shape[0]}x${data.shape[1]}`, 'success');
+                    
+                    // Simulate processing sample data
+                    setTimeout(async () => {
+                        const sampleResult = await processSampleData();
+                        if (sampleResult) {
+                            visualizeGraph(sampleResult);
+                            updateStats(sampleResult.statistics);
+                        }
+                        showLoading(false);
+                    }, 2000);
+                } else {
+                    throw new Error(data.error || 'Failed to load sample data');
+                }
+            } catch (error) {
+                console.error('Error loading sample data:', error);
+                showMessage(`Error loading sample data: ${error.message}`);
+                showLoading(false);
+            }
+        }
+
+        async function processSampleData() {
+            // Generate sample graph data for demonstration
+            const nodes = [];
+            const edges = [];
+            const numNodes = 50;
+            
+            // Create nodes in a more organized layout
+            for (let i = 0; i < numNodes; i++) {
+                const angle = (i / numNodes) * 2 * Math.PI;
+                const radius = 200 + Math.random() * 100;
+                const isFraud = Math.random() < 0.15; // 15% fraud rate
+                
+                nodes.push({
+                    id: i,
+                    x: 400 + Math.cos(angle) * radius,
+                    y: 300 + Math.sin(angle) * radius,
+                    color: isFraud ? 'red' : 'green',
+                    is_fraud: isFraud ? 1 : 0,
+                    fraud_probability: isFraud ? 0.7 + Math.random() * 0.3 : Math.random() * 0.3
+                });
+            }
+            
+            // Create edges with proper spacing
+            for (let i = 0; i < numNodes; i++) {
+                const numConnections = Math.floor(Math.random() * 4) + 1;
+                for (let j = 0; j < numConnections; j++) {
+                    const target = Math.floor(Math.random() * numNodes);
+                    if (target !== i) {
+                        edges.push({ source: i, target: target });
+                    }
+                }
+            }
+            
+            const fraudCount = nodes.filter(n => n.is_fraud === 1).length;
+            
+            return {
+                nodes: nodes,
+                edges: edges,
+                statistics: {
+                    total_nodes: numNodes,
+                    fraud_nodes: fraudCount,
+                    safe_nodes: numNodes - fraudCount,
+                    total_edges: edges.length
+                }
+            };
+        }
+
+        async function processFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                showMessage('Please select a file first');
+                return;
+            }
+
+            try {
+                showLoading(true);
+                clearMessages();
+
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const response = await fetch(`${API_BASE}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    currentData = result.data;
+                    visualizeGraph(result.data);
+                    updateStats(result.data.statistics);
+                    showMessage(`File processed successfully! Analyzed ${result.original_shape[0]} records.`, 'success');
+                } else {
+                    throw new Error(result.error || 'Processing failed');
+                }
+            } catch (error) {
+                console.error('Error processing file:', error);
+                showMessage(`Error processing file: ${error.message}`);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function visualizeGraph(data) {
+            const svg = document.getElementById('graph-svg');
+            const tooltip = document.getElementById('tooltip');
+            
+            // Clear existing content
+            svg.innerHTML = `
+                <defs>
+                    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+                    </filter>
+                </defs>
+            `;
+
+            // Create edges first (so they appear behind nodes)
+            data.edges.forEach(edge => {
+                const sourceNode = data.nodes.find(n => n.id === edge.source);
+                const targetNode = data.nodes.find(n => n.id === edge.target);
+                
+                if (sourceNode && targetNode) {
+                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    line.setAttribute('x1', sourceNode.x);
+                    line.setAttribute('y1', sourceNode.y);
+                    line.setAttribute('x2', targetNode.x);
+                    line.setAttribute('y2', targetNode.y);
+                    line.setAttribute('class', 'edge');
+                    svg.appendChild(line);
+                }
+            });
+
+            // Create nodes
+            data.nodes.forEach(node => {
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', node.x);
+                circle.setAttribute('cy', node.y);
+                circle.setAttribute('r', node.is_fraud ? 8 : 6);
+                circle.setAttribute('fill', node.color);
+                circle.setAttribute('stroke', '#2c3e50');
+                circle.setAttribute('stroke-width', node.is_fraud ? 3 : 2);
+                circle.setAttribute('class', 'node');
+                circle.setAttribute('filter', 'url(#shadow)');
+                
+                // Add hover effects
+                circle.addEventListener('mouseenter', (e) => {
+                    const rect = svg.getBoundingClientRect();
+                    tooltip.style.left = (e.clientX - rect.left + 10) + 'px';
+                    tooltip.style.top = (e.clientY - rect.top - 10) + 'px';
+                    tooltip.innerHTML = `
+                        <strong>Node ${node.id}</strong><br>
+                        Status: ${node.is_fraud ? 'FRAUD' : 'SAFE'}<br>
+                        Fraud Probability: ${(node.fraud_probability * 100).toFixed(1)}%
+                    `;
+                    tooltip.style.opacity = '1';
+                });
+                
+                circle.addEventListener('mouseleave', () => {
+                    tooltip.style.opacity = '0';
+                });
+                
+                circle.addEventListener('click', () => {
+                    // Animate clicked node
+                    circle.style.transform = 'scale(1.5)';
+                    circle.style.transformOrigin = `${node.x}px ${node.y}px`;
+                    setTimeout(() => {
+                        circle.style.transform = 'scale(1)';
+                    }, 200);
+                });
+                
+                svg.appendChild(circle);
+            });
+
+            console.log(`Graph rendered with ${data.nodes.length} nodes and ${data.edges.length} edges`);
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('GNN Fraud Detection System initialized');
+            
+            // Test API connection
+            fetch(`${API_BASE}/health`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('API connection successful:', data.message);
+                })
+                .catch(error => {
+                    console.error('API connection failed:', error);
+                    showMessage('Warning: Cannot connect to backend API. Please ensure the Flask server is running on port 5000.');
+                });
+        });
+    </script>
+</body>
+</html>

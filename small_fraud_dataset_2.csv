@@ -1,0 +1,501 @@
+TransactionID,Amount,Time,Location,Device,Class
+362,646.86,46197,Berlin,Desktop,0
+74,817.31,43125,London,Desktop,0
+375,80.48,20609,Tokyo,Tablet,0
+156,249.63,5240,Mumbai,Tablet,0
+105,908.49,83251,Tokyo,Tablet,0
+395,347.4,85451,New York,Desktop,0
+378,33.04,75683,Mumbai,Desktop,0
+125,235.66,6254,Mumbai,Desktop,0
+69,83.81,36187,Berlin,Tablet,0
+451,779.38,4757,Berlin,Mobile,0
+10,710.99,45445,Berlin,Desktop,1
+195,345.64,6229,Tokyo,Desktop,0
+407,395.31,86066,New York,Desktop,0
+85,317.87,19758,Berlin,Desktop,0
+372,28.04,14382,Tokyo,Tablet,0
+389,753.11,75916,London,Mobile,0
+496,359.82,48770,Mumbai,Desktop,0
+31,611.47,20309,Mumbai,Desktop,1
+317,414.86,59207,New York,Mobile,0
+409,906.33,68904,New York,Desktop,0
+491,461.1,65155,Mumbai,Tablet,0
+492,623.93,55168,Mumbai,Mobile,0
+281,891.11,8512,New York,Desktop,0
+357,36.25,67779,New York,Desktop,0
+77,773.56,37131,Mumbai,Desktop,0
+462,652.72,21566,London,Desktop,0
+498,86.96,75629,Berlin,Tablet,0
+212,694.98,23275,Berlin,Mobile,0
+102,640.05,23386,London,Desktop,0
+335,55.54,11302,Mumbai,Mobile,0
+476,993.04,27952,Berlin,Mobile,0
+337,856.91,41157,Mumbai,Tablet,0
+441,93.99,6783,Tokyo,Desktop,0
+174,234.23,67661,London,Desktop,0
+3,734.67,78752,Berlin,Mobile,1
+334,124.91,4018,Berlin,Tablet,0
+410,100.37,3797,London,Mobile,0
+71,774.52,14489,London,Tablet,0
+210,169.2,77735,New York,Tablet,0
+64,363.19,57091,New York,Mobile,0
+385,737.72,814,Tokyo,Tablet,0
+94,565.66,81317,New York,Tablet,0
+486,902.15,38000,London,Mobile,0
+186,663.38,67067,London,Mobile,0
+34,949.4,46540,New York,Mobile,1
+78,83.3,42944,New York,Tablet,0
+1,380.79,47605,Mumbai,Mobile,1
+12,970.21,56178,Tokyo,Mobile,1
+416,453.96,36244,Berlin,Tablet,0
+23,299.22,1015,London,Desktop,1
+73,15.47,61877,Tokyo,Tablet,0
+183,925.45,84717,New York,Mobile,0
+132,229.89,22415,Berlin,Mobile,0
+411,326.12,47882,New York,Mobile,0
+194,636.77,50448,Mumbai,Desktop,0
+56,922.66,53330,New York,Tablet,0
+149,60.96,18777,Tokyo,Desktop,0
+19,437.63,58141,Mumbai,Tablet,1
+205,610.36,6371,Tokyo,Mobile,0
+79,364.88,73963,London,Tablet,0
+495,469.06,40806,New York,Desktop,0
+263,148.68,36976,Berlin,Tablet,0
+324,287.13,71520,New York,Desktop,0
+484,631.28,28865,Berlin,Mobile,0
+80,124.71,24285,New York,Tablet,0
+40,445.75,404,Tokyo,Desktop,1
+452,562.82,19097,Berlin,Desktop,0
+47,318.59,9860,Berlin,Desktop,1
+239,649.02,24818,London,Desktop,0
+392,418.49,15328,Tokyo,Tablet,0
+353,662.11,64484,Mumbai,Tablet,0
+342,478.74,80910,Berlin,Mobile,0
+278,653.46,39809,London,Desktop,0
+291,40.2,235,Tokyo,Mobile,0
+318,181.56,75046,Tokyo,Desktop,0
+305,728.83,58596,Berlin,Mobile,0
+269,365.9,20618,New York,Desktop,0
+70,987.02,7239,Berlin,Tablet,0
+456,497.7,70480,Tokyo,Tablet,0
+466,381.12,75520,Tokyo,Mobile,0
+155,985.79,22574,London,Desktop,0
+83,337.59,53871,London,Desktop,0
+478,558.32,72847,Tokyo,Tablet,0
+173,516.97,73686,New York,Mobile,0
+322,717.45,73340,London,Desktop,0
+91,128.4,37441,London,Tablet,0
+181,347.66,18030,London,Desktop,0
+415,635.52,22116,London,Tablet,0
+313,35.1,14060,Tokyo,Tablet,0
+279,704.95,5287,Tokyo,Tablet,0
+382,699.77,76325,Mumbai,Mobile,0
+473,52.73,2079,Mumbai,Mobile,0
+363,463.67,55180,London,Desktop,0
+325,955.32,18574,Berlin,Mobile,0
+432,763.9,25150,London,Mobile,0
+348,54.85,922,Tokyo,Mobile,0
+87,732.31,44238,Berlin,Tablet,0
+76,731.72,32049,London,Desktop,0
+439,709.18,57761,Berlin,Desktop,0
+16,191.57,75672,Tokyo,Mobile,1
+250,854.48,13234,Berlin,Mobile,0
+434,110.11,49688,Mumbai,Tablet,0
+20,298.32,23793,Berlin,Mobile,1
+323,663.6,72101,New York,Desktop,0
+333,24.25,36455,London,Desktop,0
+57,97.61,13456,London,Tablet,0
+302,536.04,5951,Tokyo,Desktop,0
+230,634.83,72303,Mumbai,Tablet,0
+332,760.27,18381,London,Desktop,0
+133,128.67,24071,Tokyo,Desktop,0
+138,705.99,69724,Berlin,Desktop,0
+424,499.48,68244,Berlin,Mobile,0
+336,50.32,67506,Berlin,Mobile,0
+26,787.32,8415,Tokyo,Desktop,1
+465,962.55,20806,Berlin,Desktop,0
+282,344.62,1342,London,Desktop,0
+248,966.99,117,Mumbai,Desktop,0
+238,34.07,13046,New York,Tablet,0
+118,194.7,73477,Tokyo,Tablet,0
+43,44.04,29189,Berlin,Desktop,1
+221,661.04,75703,Tokyo,Desktop,0
+177,694.03,4621,Tokyo,Mobile,0
+321,553.73,11954,Mumbai,Tablet,0
+154,494.56,10488,Tokyo,Desktop,0
+232,507.61,77149,New York,Mobile,0
+228,399.17,1605,Tokyo,Mobile,0
+418,335.38,47523,Mumbai,Desktop,0
+204,899.57,26734,London,Mobile,0
+127,819.83,24214,Tokyo,Mobile,0
+330,255.25,11246,Tokyo,Tablet,0
+32,178.82,6970,London,Mobile,1
+114,810.04,55479,Tokyo,Mobile,0
+471,22.03,33719,Mumbai,Mobile,0
+272,812.01,20128,Tokyo,Desktop,0
+141,962.82,11314,New York,Desktop,0
+58,204.02,56397,Tokyo,Desktop,0
+193,901.41,1062,London,Tablet,0
+25,461.51,27712,Berlin,Desktop,1
+18,529.51,84791,Mumbai,Desktop,1
+266,743.36,42533,Tokyo,Mobile,0
+67,149.51,37744,London,Desktop,0
+209,15.01,73479,Mumbai,Mobile,0
+480,527.87,33536,Mumbai,Tablet,0
+95,773.26,65215,Berlin,Desktop,0
+254,323.75,79239,New York,Tablet,0
+267,700.05,1828,Berlin,Tablet,0
+24,372.7,61813,New York,Tablet,1
+223,102.74,17260,London,Mobile,0
+262,990.15,45587,Berlin,Desktop,0
+427,447.12,75060,Tokyo,Desktop,0
+6,164.43,35547,Tokyo,Desktop,1
+117,805.64,55123,New York,Tablet,0
+46,665.9,60100,London,Desktop,1
+17,311.2,65545,Tokyo,Tablet,1
+463,748.58,75452,Mumbai,Mobile,0
+358,589.92,19029,Berlin,Desktop,0
+4,602.67,55284,New York,Desktop,1
+219,653.14,48447,Mumbai,Mobile,0
+406,896.57,55176,Tokyo,Desktop,0
+61,394.79,45106,London,Mobile,0
+111,296.85,52329,London,Desktop,0
+319,164.87,29287,New York,Desktop,0
+429,357.41,39224,London,Tablet,0
+30,55.99,62680,Berlin,Mobile,1
+438,823.64,8666,New York,Desktop,0
+472,970.18,58066,Tokyo,Tablet,0
+27,207.68,62292,Berlin,Mobile,1
+8,867.51,27532,Berlin,Tablet,1
+454,907.29,16241,Tokyo,Mobile,0
+109,236.51,70173,Mumbai,Tablet,0
+38,106.7,8702,London,Mobile,1
+158,764.0,10478,Berlin,Desktop,0
+490,891.36,25522,New York,Tablet,0
+119,893.63,14388,Tokyo,Mobile,0
+115,637.07,85392,Tokyo,Mobile,0
+176,182.62,16748,Mumbai,Desktop,0
+374,686.18,3756,London,Tablet,0
+182,122.34,82838,London,Tablet,0
+145,291.99,23061,Tokyo,Desktop,0
+370,78.67,20103,London,Desktop,0
+391,990.6,17368,Berlin,Tablet,0
+196,355.72,56793,London,Desktop,0
+405,326.85,65310,Mumbai,Tablet,0
+276,506.5,9865,Tokyo,Tablet,0
+455,120.09,27696,Mumbai,Desktop,0
+142,259.26,23954,New York,Tablet,0
+366,392.24,71907,Mumbai,Mobile,0
+68,804.18,45543,London,Desktop,0
+211,553.25,81264,Mumbai,Mobile,0
+169,50.37,82558,Tokyo,Mobile,0
+494,196.24,12342,New York,Tablet,0
+376,325.79,16478,Berlin,Desktop,0
+401,112.09,53028,Mumbai,Desktop,0
+273,868.4,59383,Mumbai,Tablet,0
+110,86.21,70390,Tokyo,Tablet,0
+249,963.98,84471,London,Mobile,0
+146,46.52,79252,London,Mobile,0
+93,763.18,59494,Berlin,Tablet,0
+153,153.45,23321,Mumbai,Tablet,0
+368,906.3,64435,Tokyo,Mobile,0
+468,869.91,41949,New York,Mobile,0
+84,72.92,19198,Mumbai,Tablet,0
+246,929.04,79579,Berlin,Desktop,0
+166,836.95,79714,New York,Mobile,0
+164,540.42,79104,New York,Desktop,0
+200,782.08,6168,Tokyo,Mobile,0
+229,893.13,71158,Tokyo,Tablet,0
+75,709.79,49922,Berlin,Desktop,0
+479,969.61,18449,London,Tablet,0
+359,940.83,59201,Tokyo,Mobile,0
+251,301.5,53441,New York,Tablet,0
+120,543.95,5569,London,Tablet,0
+311,444.58,20611,Tokyo,Mobile,0
+300,94.49,36159,London,Desktop,0
+256,561.23,6469,New York,Tablet,0
+355,79.86,82870,Tokyo,Desktop,0
+400,757.0,60279,Berlin,Mobile,0
+226,251.55,58656,Berlin,Desktop,0
+354,171.31,32154,New York,Desktop,0
+235,203.29,13918,Mumbai,Mobile,0
+383,632.65,12999,London,Tablet,0
+275,516.23,82180,Berlin,Mobile,0
+37,311.57,75880,Tokyo,Mobile,1
+197,728.7,47915,Tokyo,Mobile,0
+140,972.06,28732,New York,Tablet,0
+365,942.05,29486,Tokyo,Mobile,0
+245,25.3,41427,Tokyo,Desktop,0
+440,90.54,36368,Berlin,Mobile,0
+287,470.94,36258,Berlin,Mobile,0
+60,332.08,34816,New York,Desktop,0
+112,169.61,43088,Berlin,Tablet,0
+90,477.49,77709,Tokyo,Mobile,0
+437,82.04,8070,Berlin,Tablet,0
+7,67.5,82844,Tokyo,Desktop,1
+361,394.29,43872,New York,Mobile,0
+347,638.74,9446,London,Mobile,0
+339,479.43,83122,Berlin,Desktop,0
+159,245.26,55645,Mumbai,Desktop,0
+151,909.18,81818,Berlin,Tablet,0
+178,392.87,15034,London,Tablet,0
+394,778.65,27306,London,Mobile,0
+185,265.36,38638,Berlin,Tablet,0
+450,92.67,37148,Mumbai,Desktop,0
+11,30.38,5713,Tokyo,Tablet,1
+381,126.98,14153,Berlin,Mobile,0
+104,513.48,75745,Mumbai,Desktop,0
+82,627.07,42808,New York,Desktop,0
+39,687.39,384,London,Desktop,1
+315,837.62,84056,Mumbai,Tablet,0
+168,194.65,302,Mumbai,Desktop,0
+470,963.59,24442,London,Desktop,0
+297,772.29,84555,London,Mobile,0
+475,532.42,59676,New York,Desktop,0
+199,888.22,3596,New York,Desktop,0
+298,223.66,73698,Tokyo,Mobile,0
+417,300.28,1645,Mumbai,Tablet,0
+147,613.47,39749,New York,Tablet,0
+393,378.3,56942,Tokyo,Mobile,0
+148,507.65,16907,Tokyo,Mobile,0
+448,755.84,19956,New York,Mobile,0
+288,547.22,42078,Berlin,Tablet,0
+124,118.95,45002,Mumbai,Tablet,0
+369,203.83,40631,Berlin,Mobile,0
+97,527.51,6949,Berlin,Mobile,0
+144,307.87,36668,Berlin,Desktop,0
+240,185.34,4324,New York,Desktop,0
+443,380.53,70507,London,Desktop,0
+98,433.27,55393,New York,Tablet,0
+408,20.73,44327,Mumbai,Desktop,0
+123,324.82,12015,London,Mobile,0
+184,878.57,55658,London,Mobile,0
+203,170.01,82152,Berlin,Tablet,0
+247,433.9,28746,London,Mobile,0
+306,976.09,30523,New York,Mobile,0
+299,626.66,5415,London,Desktop,0
+352,857.92,44028,Tokyo,Tablet,0
+387,289.21,2443,New York,Mobile,0
+396,931.45,39915,London,Tablet,0
+285,582.5,79767,London,Desktop,0
+126,432.84,17144,Tokyo,Mobile,0
+303,545.23,8007,Tokyo,Desktop,0
+224,374.04,3812,Tokyo,Tablet,0
+419,675.79,19256,Tokyo,Tablet,0
+220,850.73,34529,London,Desktop,0
+130,515.64,6090,New York,Mobile,0
+421,793.66,37430,Mumbai,Tablet,0
+290,594.92,12219,New York,Desktop,0
+445,814.67,67526,Tokyo,Tablet,0
+377,846.43,39666,London,Desktop,0
+292,46.97,42929,Mumbai,Mobile,0
+356,646.0,2336,Tokyo,Desktop,0
+295,135.79,70792,Berlin,Desktop,0
+397,859.83,37219,Mumbai,Desktop,0
+341,496.7,56819,London,Tablet,0
+113,930.4,39811,Berlin,Tablet,0
+180,146.15,5122,Berlin,Mobile,0
+308,329.73,19282,Mumbai,Mobile,0
+433,622.04,63731,Berlin,Desktop,0
+488,288.15,11485,Mumbai,Mobile,0
+482,698.79,38258,Berlin,Mobile,0
+423,100.29,63374,Mumbai,Tablet,0
+234,497.59,76125,Berlin,Tablet,0
+312,87.67,16984,New York,Mobile,0
+165,99.39,59399,London,Mobile,0
+137,523.6,33434,London,Tablet,0
+198,898.14,4632,London,Desktop,0
+259,574.36,64323,Tokyo,Desktop,0
+233,581.13,56138,Berlin,Mobile,0
+116,872.75,19963,Mumbai,Desktop,0
+121,809.37,69836,Berlin,Mobile,0
+350,629.6,10789,Berlin,Desktop,0
+225,272.55,28024,Berlin,Mobile,0
+403,510.2,52329,Mumbai,Mobile,0
+398,434.7,80879,Mumbai,Desktop,0
+128,862.12,80719,Mumbai,Desktop,0
+286,45.58,26614,Tokyo,Tablet,0
+412,950.56,13718,London,Desktop,0
+108,758.0,42318,Berlin,Mobile,0
+371,109.77,64772,New York,Mobile,0
+326,740.52,9184,Tokyo,Mobile,0
+134,344.24,58243,London,Mobile,0
+453,429.98,10395,Berlin,Tablet,0
+45,266.19,18384,New York,Desktop,1
+461,126.35,24917,New York,Tablet,0
+66,547.27,70080,Mumbai,Desktop,0
+284,103.04,19216,New York,Mobile,0
+86,331.93,15254,London,Desktop,0
+243,915.72,38110,New York,Tablet,0
+187,819.05,34674,Berlin,Mobile,0
+384,878.7,55318,Berlin,Tablet,0
+160,730.93,19262,Tokyo,Desktop,0
+13,834.12,49407,New York,Mobile,1
+36,810.31,18017,Mumbai,Desktop,1
+29,596.49,4158,Mumbai,Desktop,1
+171,680.79,8717,New York,Desktop,0
+143,502.28,57108,New York,Tablet,0
+399,753.36,64644,Berlin,Mobile,0
+343,181.47,71324,Berlin,Tablet,0
+222,572.63,76090,London,Desktop,0
+96,498.86,78587,London,Mobile,0
+52,777.38,69172,Mumbai,Tablet,0
+241,941.05,76323,Mumbai,Mobile,0
+485,588.47,6645,Mumbai,Mobile,0
+379,816.32,71315,London,Tablet,0
+179,937.36,5126,New York,Mobile,0
+42,500.23,47926,Mumbai,Desktop,1
+499,974.65,52603,London,Mobile,0
+422,791.72,39282,Berlin,Tablet,0
+207,110.46,79905,Tokyo,Mobile,0
+283,381.83,63076,New York,Desktop,0
+255,177.8,46514,New York,Desktop,0
+413,951.1,34560,Tokyo,Mobile,0
+5,164.46,57043,New York,Desktop,1
+257,936.79,30105,Mumbai,Desktop,0
+449,382.5,46240,Mumbai,Mobile,0
+101,41.11,25934,Mumbai,Tablet,0
+227,973.28,27285,London,Mobile,0
+430,125.9,13224,London,Desktop,0
+214,232.03,81449,Berlin,Mobile,0
+172,26.42,28699,Berlin,Tablet,0
+99,35.16,73553,London,Mobile,0
+293,824.37,67444,London,Tablet,0
+216,244.88,62981,New York,Tablet,0
+62,278.64,53932,Berlin,Tablet,0
+48,524.87,80642,Mumbai,Desktop,1
+33,74.4,72474,London,Mobile,1
+268,705.46,1917,London,Mobile,0
+328,615.6,67728,London,Tablet,0
+201,645.61,7561,Mumbai,Mobile,0
+447,986.14,45765,Tokyo,Desktop,0
+28,519.09,23833,Tokyo,Desktop,1
+425,66.98,11694,Tokyo,Desktop,0
+231,796.86,27139,Berlin,Desktop,0
+261,618.86,49376,Berlin,Desktop,0
+289,293.68,83524,New York,Mobile,0
+163,637.19,64291,Berlin,Mobile,0
+426,554.03,56264,New York,Mobile,0
+139,369.99,75697,New York,Desktop,0
+63,830.45,17100,New York,Tablet,0
+136,329.97,83807,London,Desktop,0
+129,16.88,71774,Tokyo,Desktop,0
+477,83.06,42460,Berlin,Tablet,0
+9,605.1,34349,New York,Tablet,1
+327,558.81,19096,Tokyo,Tablet,0
+464,587.54,62823,London,Tablet,0
+65,288.13,21949,Tokyo,Desktop,0
+301,61.16,43925,New York,Desktop,0
+15,190.01,50990,London,Desktop,1
+157,675.41,43221,Tokyo,Desktop,0
+41,130.82,40943,Mumbai,Tablet,1
+380,289.04,77834,Berlin,Tablet,0
+469,231.36,2482,Mumbai,Tablet,0
+404,828.19,27632,London,Tablet,0
+217,332.15,84659,Berlin,Desktop,0
+280,797.83,34387,London,Desktop,0
+435,93.27,73509,New York,Tablet,0
+431,151.56,40738,London,Mobile,0
+338,706.62,54917,Berlin,Mobile,0
+237,287.96,27446,Mumbai,Mobile,0
+208,666.87,12910,London,Tablet,0
+213,655.44,72274,New York,Mobile,0
+296,527.02,65441,Tokyo,Mobile,0
+458,473.97,19816,Berlin,Desktop,0
+252,391.25,846,New York,Tablet,0
+489,950.91,38565,New York,Desktop,0
+487,54.99,26737,Tokyo,Desktop,0
+304,641.06,41832,Berlin,Tablet,0
+351,508.1,66656,New York,Desktop,0
+270,300.66,32254,Mumbai,Mobile,0
+202,93.3,73794,Mumbai,Mobile,0
+162,635.98,4432,New York,Mobile,0
+44,910.23,12763,Berlin,Tablet,1
+218,749.03,54553,London,Tablet,0
+402,903.53,126,Mumbai,Tablet,0
+191,102.17,38518,Tokyo,Tablet,0
+310,278.12,77,London,Mobile,0
+260,106.2,58067,London,Mobile,0
+106,256.8,53413,New York,Desktop,0
+54,895.88,4809,London,Tablet,0
+390,808.77,73319,Mumbai,Tablet,0
+2,951.21,38088,London,Mobile,1
+442,986.77,41914,Mumbai,Mobile,0
+483,460.0,48302,Mumbai,Desktop,0
+50,193.01,23574,Mumbai,Desktop,1
+420,754.85,53173,Tokyo,Mobile,0
+81,864.47,37626,Berlin,Mobile,0
+206,19.11,26069,Berlin,Desktop,0
+35,965.98,20384,Berlin,Mobile,1
+264,523.15,67584,Tokyo,Desktop,0
+428,888.83,57545,Tokyo,Desktop,0
+367,961.58,71895,Berlin,Desktop,0
+92,716.11,53682,Mumbai,Desktop,0
+340,106.86,24519,New York,Tablet,0
+474,892.23,2717,New York,Mobile,0
+53,940.1,10916,New York,Mobile,0
+346,619.69,25053,Tokyo,Mobile,0
+265,878.6,78477,Mumbai,Mobile,0
+242,954.39,9111,Berlin,Desktop,0
+14,220.22,70340,Mumbai,Mobile,1
+316,699.01,43303,Berlin,Desktop,0
+89,888.34,39764,New York,Mobile,0
+388,185.67,75993,New York,Tablet,0
+274,914.11,65545,Berlin,Desktop,0
+167,327.57,50428,New York,Desktop,0
+329,425.4,34016,Mumbai,Mobile,0
+493,284.61,52487,Mumbai,Desktop,0
+135,943.48,41240,New York,Desktop,0
+307,521.14,15524,New York,Mobile,0
+481,633.1,64077,Tokyo,Desktop,0
+320,257.74,39711,London,Desktop,0
+244,376.46,16389,New York,Tablet,0
+55,601.92,32201,Tokyo,Mobile,0
+364,550.16,23710,Mumbai,Desktop,0
+51,969.89,23524,London,Desktop,0
+457,21.24,46163,New York,Tablet,0
+175,648.72,44247,New York,Tablet,0
+446,947.78,70835,Tokyo,Desktop,0
+190,249.43,73688,London,Tablet,0
+497,587.82,78623,Berlin,Mobile,0
+188,559.65,35854,New York,Tablet,0
+170,594.98,55,Berlin,Tablet,0
+59,54.78,38765,New York,Mobile,0
+49,551.24,50612,Tokyo,Tablet,1
+345,404.52,59379,London,Mobile,0
+236,725.23,85655,New York,Mobile,0
+253,852.63,10954,Berlin,Tablet,0
+22,148.1,37892,London,Mobile,1
+314,963.02,82985,Tokyo,Mobile,0
+460,127.63,52853,Tokyo,Desktop,0
+161,374.11,52796,Tokyo,Tablet,0
+277,800.31,2219,Berlin,Tablet,0
+444,376.94,79026,Mumbai,Mobile,0
+192,898.24,10267,Berlin,Desktop,0
+386,805.45,76077,New York,Tablet,0
+294,366.59,8567,New York,Tablet,0
+414,577.7,76589,London,Desktop,0
+344,439.51,5408,Tokyo,Mobile,0
+258,699.07,42101,Mumbai,Tablet,0
+309,797.23,23930,Berlin,Mobile,0
+150,285.86,51745,London,Mobile,0
+131,423.24,11637,Tokyo,Tablet,0
+152,247.17,23624,Mumbai,Mobile,0
+360,579.72,32265,Berlin,Tablet,0
+100,116.81,6941,Berlin,Tablet,0
+373,103.5,84291,London,Tablet,0
+88,641.18,1252,Tokyo,Mobile,0
+459,65.74,49840,Tokyo,Mobile,0
+331,362.41,45558,Berlin,Mobile,0
+215,715.06,60004,London,Tablet,0
+467,292.85,1759,New York,Tablet,0
+122,897.13,36586,New York,Desktop,0
+500,986.35,81974,Tokyo,Mobile,0
+21,615.73,56570,Berlin,Mobile,1
+189,534.35,46271,Tokyo,Tablet,0
+72,206.73,58017,Berlin,Tablet,0
+107,416.28,56800,Tokyo,Mobile,0
+271,811.27,47362,Mumbai,Tablet,0
+349,380.87,51356,Berlin,Tablet,0
+436,703.96,8577,Tokyo,Mobile,0
+103,321.21,61886,London,Desktop,0

@@ -1,0 +1,147 @@
+{
+  "nodes": [
+    {
+      "id": 10,
+      "x": 446.24625429058784,
+      "y": 596.6485247723913,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 17,
+      "x": 686.3161376689118,
+      "y": 366.85706308076135,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 25,
+      "x": 189.1046268630311,
+      "y": 79.50310004500852,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 29,
+      "x": 117.2782017957241,
+      "y": 400.03629292851497,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 31,
+      "x": 631.8571526437901,
+      "y": 467.20592698876885,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 41,
+      "x": 163.13351317390166,
+      "y": 512.4938994233976,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 46,
+      "x": 678.7124323175844,
+      "y": 154.66181542732087,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 49,
+      "x": 289.23378622182395,
+      "y": 40.22902084179151,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 53,
+      "x": 350.4683821314098,
+      "y": 547.5722789766718,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 66,
+      "x": 391.5476781739709,
+      "y": 17.404423939284413,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 71,
+      "x": 592.6631198418063,
+      "y": 63.5794607299635,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 72,
+      "x": 153.6489305311765,
+      "y": 184.7194292001786,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 74,
+      "x": 547.5881909304952,
+      "y": 541.0862987849765,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 87,
+      "x": 121.88048150984707,
+      "y": 288.3997005127471,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 89,
+      "x": 490.5637381800486,
+      "y": 5.684341886080802e-14,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 92,
+      "x": 673.1767607778091,
+      "y": 257.1932972416303,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 99,
+      "x": 276.5806129480817,
+      "y": 582.409467106593,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    }
+  ],
+  "edges": [],
+  "statistics": {
+    "total_nodes": 17,
+    "fraud_nodes": 0,
+    "safe_nodes": 17,
+    "total_edges": 0
+  }
+}

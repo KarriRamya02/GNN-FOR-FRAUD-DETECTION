@@ -1,0 +1,368 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "x": 405.68806565592945,
+      "y": 600.0,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 1,
+      "x": 677.9363808448265,
+      "y": 375.4122117035379,
+      "color": "green",
+      "fraud_probability": 1.6512636838756145e-23,
+      "is_fraud": 0
+    },
+    {
+      "id": 2,
+      "x": 211.3107931401809,
+      "y": 64.02767232799042,
+      "color": "green",
+      "fraud_probability": 2.2355097291712645e-24,
+      "is_fraud": 0
+    },
+    {
+      "id": 3,
+      "x": 120.78627623526546,
+      "y": 414.2005981825064,
+      "color": "green",
+      "fraud_probability": 3.7840871216219675e-19,
+      "is_fraud": 0
+    },
+    {
+      "id": 4,
+      "x": 579.3577929691626,
+      "y": 517.8918091735134,
+      "color": "green",
+      "fraud_probability": 2.340729278608614e-25,
+      "is_fraud": 0
+    },
+    {
+      "id": 5,
+      "x": 165.29359157004427,
+      "y": 514.4686872299509,
+      "color": "green",
+      "fraud_probability": 7.250639883217971e-24,
+      "is_fraud": 0
+    },
+    {
+      "id": 6,
+      "x": 682.3862116330394,
+      "y": 181.47168395933255,
+      "color": "green",
+      "fraud_probability": 4.939471293487864e-25,
+      "is_fraud": 0
+    },
+    {
+      "id": 7,
+      "x": 155.39626690406524,
+      "y": 143.26786872230082,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 8,
+      "x": 251.54516109351795,
+      "y": 515.2502394902027,
+      "color": "green",
+      "fraud_probability": 1.9690250458609104e-25,
+      "is_fraud": 0
+    },
+    {
+      "id": 9,
+      "x": 386.7269686308426,
+      "y": 22.37406199241292,
+      "color": "green",
+      "fraud_probability": 3.7198197035926365e-22,
+      "is_fraud": 0
+    },
+    {
+      "id": 10,
+      "x": 563.7905125357638,
+      "y": 50.35121142833816,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 11,
+      "x": 136.9539017932866,
+      "y": 230.8152259662939,
+      "color": "green",
+      "fraud_probability": 4.104196218629409e-23,
+      "is_fraud": 0
+    },
+    {
+      "id": 12,
+      "x": 499.38523633715994,
+      "y": 563.7122432547322,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 13,
+      "x": 122.4884607690517,
+      "y": 322.569516205943,
+      "color": "green",
+      "fraud_probability": 2.2580248781878254e-09,
+      "is_fraud": 0
+    },
+    {
+      "id": 14,
+      "x": 477.2134963120803,
+      "y": 2.81453881321022,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 15,
+      "x": 615.8250311969354,
+      "y": 122.47641653792684,
+      "color": "red",
+      "fraud_probability": 0.9999997615814209,
+      "is_fraud": 1
+    },
+    {
+      "id": 16,
+      "x": 298.38131580529284,
+      "y": 590.6059833189436,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 17,
+      "x": 667.182412456297,
+      "y": 473.9855753155957,
+      "color": "red",
+      "fraud_probability": 1.0,
+      "is_fraud": 1
+    },
+    {
+      "id": 18,
+      "x": 300.4391655084815,
+      "y": 16.37693611202701,
+      "color": "green",
+      "fraud_probability": 3.499250306049362e-05,
+      "is_fraud": 0
+    },
+    {
+      "id": 19,
+      "x": 681.9129586087764,
+      "y": 277.9275202652416,
+      "color": "green",
+      "fraud_probability": 2.8620435841730796e-05,
+      "is_fraud": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 0
+    },
+    {
+      "source": 0,
+      "target": 10
+    },
+    {
+      "source": 1,
+      "target": 1
+    },
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 1,
+      "target": 4
+    },
+    {
+      "source": 1,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 2
+    },
+    {
+      "source": 2,
+      "target": 4
+    },
+    {
+      "source": 2,
+      "target": 6
+    },
+    {
+      "source": 2,
+      "target": 8
+    },
+    {
+      "source": 2,
+      "target": 9
+    },
+    {
+      "source": 2,
+      "target": 11
+    },
+    {
+      "source": 3,
+      "target": 3
+    },
+    {
+      "source": 4,
+      "target": 4
+    },
+    {
+      "source": 4,
+      "target": 5
+    },
+    {
+      "source": 4,
+      "target": 6
+    },
+    {
+      "source": 4,
+      "target": 8
+    },
+    {
+      "source": 5,
+      "target": 5
+    },
+    {
+      "source": 5,
+      "target": 6
+    },
+    {
+      "source": 5,
+      "target": 8
+    },
+    {
+      "source": 5,
+      "target": 13
+    },
+    {
+      "source": 6,
+      "target": 6
+    },
+    {
+      "source": 6,
+      "target": 8
+    },
+    {
+      "source": 7,
+      "target": 7
+    },
+    {
+      "source": 8,
+      "target": 8
+    },
+    {
+      "source": 8,
+      "target": 11
+    },
+    {
+      "source": 9,
+      "target": 9
+    },
+    {
+      "source": 9,
+      "target": 11
+    },
+    {
+      "source": 10,
+      "target": 10
+    },
+    {
+      "source": 10,
+      "target": 12
+    },
+    {
+      "source": 10,
+      "target": 14
+    },
+    {
+      "source": 10,
+      "target": 15
+    },
+    {
+      "source": 11,
+      "target": 11
+    },
+    {
+      "source": 12,
+      "target": 12
+    },
+    {
+      "source": 12,
+      "target": 14
+    },
+    {
+      "source": 12,
+      "target": 17
+    },
+    {
+      "source": 13,
+      "target": 13
+    },
+    {
+      "source": 13,
+      "target": 16
+    },
+    {
+      "source": 14,
+      "target": 14
+    },
+    {
+      "source": 15,
+      "target": 15
+    },
+    {
+      "source": 15,
+      "target": 16
+    },
+    {
+      "source": 15,
+      "target": 18
+    },
+    {
+      "source": 15,
+      "target": 19
+    },
+    {
+      "source": 16,
+      "target": 16
+    },
+    {
+      "source": 16,
+      "target": 17
+    },
+    {
+      "source": 17,
+      "target": 17
+    },
+    {
+      "source": 18,
+      "target": 18
+    },
+    {
+      "source": 18,
+      "target": 19
+    },
+    {
+      "source": 19,
+      "target": 19
+    }
+  ],
+  "statistics": {
+    "total_nodes": 20,
+    "fraud_nodes": 8,
+    "safe_nodes": 12,
+    "total_edges": 49
+  }
+}

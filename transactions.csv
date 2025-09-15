@@ -1,0 +1,11 @@
+transaction_id,amount,location,fraud_prob
+T001,100,New York,0.1
+T002,850,Boston,0.7
+T003,400,New York,0.85
+T004,250,Chicago,0.3
+T005,190,San Francisco,0.05
+T006,980,Boston,0.92
+T007,450,Chicago,0.62
+T008,210,New York,0.15
+T009,150,San Francisco,0.8
+T010,310,Chicago,0.2

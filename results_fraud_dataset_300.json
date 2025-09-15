@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": 17,
+      "x": 489.3987212097861,
+      "y": 580.1283075000557,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 23,
+      "x": 693.6365115230772,
+      "y": 215.0872803163406,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 48,
+      "x": 293.043740205763,
+      "y": 0.0,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    },
+    {
+      "id": 63,
+      "x": 123.9210270613737,
+      "y": 404.78441218360365,
+      "color": "green",
+      "fraud_probability": 0.0,
+      "is_fraud": 0
+    }
+  ],
+  "edges": [],
+  "statistics": {
+    "total_nodes": 4,
+    "fraud_nodes": 0,
+    "safe_nodes": 4,
+    "total_edges": 0
+  }
+}

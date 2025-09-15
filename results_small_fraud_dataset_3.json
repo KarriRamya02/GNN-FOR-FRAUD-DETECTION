@@ -1,0 +1,10 @@
+{
+  "nodes": [],
+  "edges": [],
+  "statistics": {
+    "total_nodes": 0,
+    "fraud_nodes": 0,
+    "safe_nodes": 0,
+    "total_edges": 0
+  }
+}

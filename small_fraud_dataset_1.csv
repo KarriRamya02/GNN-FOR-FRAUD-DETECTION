@@ -1,0 +1,101 @@
+TransactionID,Amount,Time,Location,Device,Class
+84,72.92,2811,Berlin,Mobile,0
+54,895.88,65318,Tokyo,Tablet,0
+71,774.52,37157,Berlin,Tablet,0
+46,665.9,68840,Tokyo,Mobile,0
+45,266.19,61087,Mumbai,Mobile,0
+40,445.75,3748,Mumbai,Desktop,0
+23,299.22,21834,New York,Desktop,0
+81,864.47,51663,Mumbai,Desktop,0
+11,30.38,81734,London,Mobile,0
+1,380.79,50015,New York,Mobile,1
+19,437.63,69163,Tokyo,Desktop,0
+31,611.47,30080,Tokyo,Tablet,0
+74,817.31,65733,Mumbai,Mobile,0
+34,949.4,6776,London,Desktop,0
+91,128.4,83763,London,Mobile,0
+5,164.46,71910,Mumbai,Mobile,1
+77,773.56,22671,Berlin,Mobile,0
+78,83.3,25184,New York,Tablet,0
+13,834.12,22299,Mumbai,Desktop,0
+32,178.82,66842,New York,Desktop,0
+56,922.66,67172,London,Desktop,0
+89,888.34,2911,New York,Mobile,0
+27,207.68,15707,Mumbai,Desktop,0
+43,44.04,34766,New York,Tablet,0
+70,987.02,25342,Mumbai,Tablet,0
+16,191.57,42557,Tokyo,Mobile,0
+41,130.82,13545,New York,Tablet,0
+97,527.51,37504,London,Desktop,0
+10,710.99,62623,New York,Desktop,1
+73,15.47,52083,Tokyo,Mobile,0
+12,970.21,75450,New York,Mobile,0
+48,524.87,51005,New York,Tablet,0
+86,331.93,72082,New York,Mobile,0
+29,596.49,44262,Tokyo,Mobile,0
+94,565.66,83879,London,Desktop,0
+6,164.43,56044,London,Desktop,1
+67,149.51,70467,New York,Desktop,0
+66,547.27,63734,Tokyo,Mobile,0
+36,810.31,9474,London,Desktop,0
+17,311.2,49080,New York,Mobile,0
+50,193.01,39353,Tokyo,Mobile,0
+35,965.98,55016,London,Desktop,0
+8,867.51,33827,Mumbai,Desktop,1
+96,498.86,11111,London,Mobile,0
+28,519.09,21976,Mumbai,Tablet,0
+20,298.32,25939,Tokyo,Tablet,0
+82,627.07,15708,New York,Mobile,0
+26,787.32,75766,New York,Tablet,0
+63,830.45,46717,Berlin,Desktop,0
+14,220.22,43585,Berlin,Tablet,0
+25,461.51,26105,Tokyo,Tablet,0
+4,602.67,80356,Tokyo,Tablet,1
+18,529.51,2693,New York,Desktop,0
+39,687.39,5530,New York,Desktop,0
+9,605.1,55820,Mumbai,Tablet,1
+79,364.88,42107,Berlin,Desktop,0
+7,67.5,67214,New York,Tablet,1
+65,288.13,26309,Mumbai,Desktop,0
+37,311.57,58053,Tokyo,Desktop,0
+90,477.49,67270,London,Desktop,0
+57,97.61,85616,Berlin,Desktop,0
+100,116.81,73656,New York,Desktop,0
+55,601.92,23664,Tokyo,Mobile,0
+44,910.23,73530,Berlin,Mobile,0
+51,969.89,62003,Tokyo,Desktop,0
+68,804.18,52662,New York,Mobile,0
+47,318.59,54384,New York,Mobile,0
+69,83.81,12688,Mumbai,Desktop,0
+62,278.64,55680,Mumbai,Tablet,0
+98,433.27,1802,London,Mobile,0
+80,124.71,86202,Tokyo,Desktop,0
+42,500.23,66199,Mumbai,Desktop,0
+59,54.78,854,Mumbai,Tablet,0
+49,551.24,46576,Mumbai,Desktop,0
+99,35.16,8155,New York,Mobile,0
+58,204.02,26736,New York,Desktop,0
+76,731.72,80623,Berlin,Desktop,0
+33,74.4,61373,Berlin,Mobile,0
+95,773.26,71295,Tokyo,Tablet,0
+60,332.08,38623,New York,Mobile,0
+64,363.19,50859,Tokyo,Tablet,0
+85,317.87,56250,Berlin,Mobile,0
+38,106.7,21959,Berlin,Mobile,0
+30,55.99,23776,New York,Desktop,0
+2,951.21,54268,London,Tablet,1
+53,940.1,52733,Tokyo,Tablet,0
+22,148.1,42941,Mumbai,Tablet,0
+3,734.67,18141,London,Desktop,1
+24,372.7,18047,Mumbai,Desktop,0
+88,641.18,11411,London,Tablet,0
+92,716.11,8680,Tokyo,Tablet,0
+75,709.79,34698,New York,Desktop,0
+87,732.31,34754,Tokyo,Tablet,0
+83,337.59,49811,Mumbai,Mobile,0
+21,615.73,48925,Tokyo,Tablet,0
+61,394.79,7392,Berlin,Tablet,0
+72,206.73,67863,Berlin,Mobile,0
+15,190.01,64044,Berlin,Mobile,0
+93,763.18,84896,London,Tablet,0
+52,777.38,83211,Berlin,Tablet,0

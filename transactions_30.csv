@@ -1,0 +1,31 @@
+transaction_id,amount,location,fraud_prob,class
+T001,67.5,Chicago,0.72,1
+T002,511.71,San Francisco,0.71,1
+T003,812.73,Chicago,0.61,1
+T004,949.11,Los Angeles,0.45,0
+T005,335.79,Boston,0.14,0
+T006,746.04,Chicago,0.06,0
+T007,877.78,New York,0.68,1
+T008,72.59,New York,0.46,0
+T009,363.45,New York,0.82,1
+T010,795.48,New York,0.35,0
+T011,407.78,San Francisco,0.13,0
+T012,627.07,Chicago,0.75,1
+T013,514.26,New York,0.47,0
+T014,678.7,San Francisco,0.08,0
+T015,801.93,New York,0.74,1
+T016,543.56,Los Angeles,0.26,0
+T017,402.72,Chicago,0.63,1
+T018,797.72,Chicago,0.55,1
+T019,214.85,Boston,0.75,1
+T020,158.86,Los Angeles,0.73,1
+T021,346.63,San Francisco,0.03,0
+T022,783.52,Los Angeles,0.45,0
+T023,397.66,New York,0.19,0
+T024,551.61,Boston,0.59,1
+T025,295.24,San Francisco,0.6,1
+T026,990.4,Los Angeles,0.99,1
+T027,704.37,Los Angeles,0.29,0
+T028,471.2,Boston,0.51,1
+T029,145.18,Chicago,0.65,1
+T030,509.82,San Francisco,0.31,0
